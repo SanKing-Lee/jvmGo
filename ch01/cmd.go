@@ -6,15 +6,17 @@ import (
 	"os"
 )
 
+// 命令行结构体
 type Cmd struct {
-	helpFlag    bool
-	versionFlag bool
-	cpOption    string
-	class       string
-	args        []string
+	helpFlag    bool	// 是否为帮助命令行
+	versionFlag bool	// 是否为版本命令行
+	cpOption    string	// classpath可选项
+	class       string	// 类名
+	args        []string	// 参数
 }
 
 func parseCmd() *Cmd {
+	// 实例化命令
 	cmd := &Cmd{}
 	flag.Usage = printUsage
 	flag.BoolVar(&cmd.helpFlag, "help", false, "print help message")
