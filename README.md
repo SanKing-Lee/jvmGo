@@ -3,16 +3,6 @@
 作者：张秀宏
 出版社：机械工业出版社
 
-**2019.06.19**
-- ch01: 命令行工具
-    - cmd.go
-        - Cmd结构体
-        - parseCmd()
-        - printUsage()
-    - main.go
-        - main
-        - startJVM(cmd *Cmd)
-
 **2019.06.22**
 - ch02: 加载classpath
     - classpath
@@ -26,4 +16,14 @@
         - entry_wildcard.go 对通配符进行解析
     - cmd.go    添加Xjreoption，用于解析传入命令中的-Xjre及其对应的jre路径
     - main.go   修改startJVM，测试classpath
+
+**2019.06.19**
+- ch01: 命令行工具
+    - cmd.go
+        - Cmd结构体
+        - parseCmd()
+        - printUsage()
+    - main.go
+        - main
+        - startJVM(cmd *Cmd)
         
