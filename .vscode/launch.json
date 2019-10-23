@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - ClassFileTest",
+            "request": "launch",
+            "mainClass": "ClassFileTest"
+        },
+        {
             "name": "Launch",
             "type": "go",
             "request": "launch",

@@ -4,7 +4,12 @@
 出版社：机械工业出版社
 
 **2019.06.22**
-- ch02: 加载classpath
+- 可优化
+    - classfile/cp_utf8/decodeMUTF8() 解码方式
+    - classfile/attribute_info/newAttributeInfo() 补全所有的属性类型
+
+**2019.06.22**
+- 加载classpath
     - classpath
         - Classpath.go  类路径主要分为启动类，扩展类和用户类三种
         - entry.go  定义了所有用于加载类的入口的接口
@@ -18,7 +23,7 @@
     - main.go   修改startJVM，测试classpath
 
 **2019.06.19**
-- ch01: 命令行工具
+- 命令行工具
     - cmd.go
         - Cmd结构体
         - parseCmd()
